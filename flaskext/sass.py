@@ -90,6 +90,7 @@ class Sass(object):
         log.debug("Finding *.{sass,scss} files under %s", search_path)
         for path, subdirs, filenames in os.walk(search_path):
             for f in filenames:
+                continue if f.beginswith('_')
                 if f.endswith('.sass'):
                     yield (
                         os.path.join(path, f),
