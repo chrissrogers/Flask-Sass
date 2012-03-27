@@ -10,7 +10,7 @@
     :license: BSD, see LICENSE for more details.
 """
 
-__version__         = '0.8'
+__version__         = '0.8-crogers'
 __package_name__    = 'Flask-Sass'
 __summary__         = "A small Flask extension that makes it easy to use " + \
                       "Sass with your Flask application."
